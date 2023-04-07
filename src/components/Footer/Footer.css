@@ -25,7 +25,7 @@ footer div {
     display: flex;
     width: 40%;
     flex-direction: row;
-    justify-content: end;
+    justify-content:flex-end;
     gap: 7%;
     padding-right: 6%;
 }
