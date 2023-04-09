@@ -20,7 +20,7 @@ export default function ModalMovie(props){
         <Modal.Header closeButton>
             <Modal.Title>{props.data.title}</Modal.Title>
         </Modal.Header>
-        <img src = {props.data.posterPath} alt = {props.data.title}/>
+        <img id='modal-img' src = {`https://image.tmdb.org/t/p/w500/${props.data.posterPath}`} alt = {props.data.title}/>
         <Modal.Body>{props.data.overview}</Modal.Body>
         {showComment ? <CommentMovie/> : null}
         <Modal.Footer>

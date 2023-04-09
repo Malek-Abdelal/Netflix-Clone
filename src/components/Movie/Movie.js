@@ -14,7 +14,7 @@ export default function Movie(props){
     return (
         <div id="div">
         <Card id = 'card' style={{ width: '18rem' }}>
-        <Card.Img variant="top" src = {props.data.posterPath} />
+        <Card.Img style={{height :"400px"}} variant="top" src = {`https://image.tmdb.org/t/p/w500/${props.data.posterPath}`} />
         <Card.Body id="card-body">
             <Card.Title>{props.data.title}</Card.Title>
             <Card.Text>
