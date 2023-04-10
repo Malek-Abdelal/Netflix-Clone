@@ -6,9 +6,9 @@ export default function NavBar () {
         <img src='https://wallpapercave.com/wp/wp5063339.png' alt = "Nitflex"/>
         <nav>
             <ul>
-                <li><Link id="link" to = '/'>Home</Link></li>
+                <li><Link className="link" to = '/'>Home</Link></li>
+                <li><Link className="link" to = '/favorite'>Favorite</Link></li>
                 <li>Movies</li>
-                <li>About</li>
             </ul>
         </nav>
         </>
