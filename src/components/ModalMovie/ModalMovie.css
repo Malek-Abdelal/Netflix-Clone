@@ -1,0 +1,24 @@
+#modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, .85) !important;    
+}
+
+.modal-body{
+    width :94%
+}
+
+#modal-img{
+    height :400px;
+    width: 300px;
+    border-radius: 5px;
+}

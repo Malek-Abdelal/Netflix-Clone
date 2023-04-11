@@ -1,0 +1,32 @@
+#div {
+    min-height: 330px;
+}
+
+#card{
+    min-width: 330px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color:rgba(0, 0, 0, 0.9);
+    color: white;
+    gap: 8px;
+}
+
+#card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 8px;
+}
+
+#button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#add-fav-btn:hover {
+background-color: red;
+border-color: transparent;
+}
