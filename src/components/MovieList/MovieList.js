@@ -6,7 +6,7 @@ export default function MovieList(props){
         <h2 id = "header">Trending Movies</h2>
         <div id = "container">
             {props.data.map(movie => {
-                return <Movie data = {movie}/>
+                return <Movie data = {movie} addCommentProp = {props.addCommentProp}/>
             })}
         </div>
         </>

@@ -15,10 +15,18 @@ export default function Home(){
     }
 
     useEffect(() => {fetchTrending()}, []);
+
+    function addCommentProp(comment, id){
+       for (const movie of trending) {
+             if (movie.id === id) { 
+                 movie.comment = comment;
+            }
+        }
+    }
     
     return (
         <>
-        <MovieList data = {trending}/>
+        <MovieList data = {trending} addCommentProp = {addCommentProp}/>
         </>
     )
 }

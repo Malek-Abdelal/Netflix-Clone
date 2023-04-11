@@ -14,11 +14,16 @@
 }
 
 .modal-body{
-    width :94%
+    width :94%;
 }
 
 #modal-img{
     height :400px;
     width: 300px;
     border-radius: 5px;
+}
+
+#comment {
+    align-self: flex-start;
+    margin-left: 6%;
 }
