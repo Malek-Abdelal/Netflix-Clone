@@ -22,7 +22,7 @@ export default function Movie(props){
             </div>
         </Card.Body>
         </Card>
-        <ModalMovie data = {props.data} handleClose = {handleCloseModal} show = {showModal} />
+        <ModalMovie data = {props.data} handleClose = {handleCloseModal} show = {showModal} addCommentProp = {props.addCommentProp} />
         </div>
     ) 
 }
