@@ -38,12 +38,15 @@ export default function FavList (){
         }
     }
 
-    async function handleUpdate(id, comment){
+    async function handleUpdate(id){
         const url = `${process.env.REACT_APP_URL}/UPDATE/${id}`;
-        const data = {comments : comment};
+        const data = {comments : updatedComment.current.value};
+        console.log(updatedComment.current.value);
+        console.log(id);
         await fetch(url, {method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data) });
+        // console.log(response.json);
         favoriteMovies();
     }
 
@@ -51,8 +54,10 @@ export default function FavList (){
     function updateAction(id){
         handleUpdateBtn();
         if (updateBtn === true) {
+            console.log(id);
             // console.log(updatedComment.current.value);  //sometimes empty !!
-            handleUpdate(id, updatedComment.current.value);  
+            handleUpdate(id);  
+            // handleUpdate(id, updatedComment.current.value);  
         }       
     }
 

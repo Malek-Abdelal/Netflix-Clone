@@ -6,7 +6,7 @@ import CommentMovie from '../CommentMovie/CommentMovie';
 import './ModalMovie.css'
 
 export default function ModalMovie(props){
-    
+    // console.log(props.data.id);
     const [showComment, setShowComment] = useState(false);
     const handleCommentBtn = () => setShowComment(!showComment);
 
@@ -17,9 +17,9 @@ export default function ModalMovie(props){
     const commentData = useRef();
 
     function commentHandler(){
-        let commentValue = commentData.current.value;
+        // console.log(commentData.current.value);
+        let commentValue = (commentData.current.value || "");
         props.addCommentProp(commentValue, props.data.id);
-        console.log(commentData.current.value);
     }
 
     async function addFavorite(){
@@ -40,6 +40,7 @@ export default function ModalMovie(props){
     }
 
     function addToFavHandler(){
+        // console.log(props.data.id);
         props.handleClose();
         commentHandler();
         addFavorite();
